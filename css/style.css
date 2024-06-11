@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;  /* นำข้อความมาต่อกัน */
+    justify-content: space-between; /* จัดตำแหน่งให้ชิดซ้ายชิดขวา*/
+    /*border: 1px solid red;  เส้นกรอบ */
+    padding: 10px; /* เว้นรอบด้าน10px */
+}
+
+.logo a{
+ text-decoration: none;
+ color: #333;
+ font-weight: bold;  /* ทำตัวหน้า */
+ font-size: 18px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;/* เอาจุดนไหน้าออก */
+}
+
+.menu li { /* เข้าถึงคลาสliในmenu */
+    margin-left: 10px;/* เว้นระยะหางด้ายซ้าย */
+}
+
+.menu li a {
+    text-decoration: none; /* เอาเส้นใต้ออก */
+    color: #333;
+}
+
+.banner{
+    background-color: teal;
+    color: black;
+    display: flex;
+    justify-content: center; /* จัดในแนวนอน */
+    align-items: center; /* จัดในแนวตั้ง */
+}
+
+.banner-info{
+    text-align: center;
+}
+
+.banner-info img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%; /* ทำให้รูปเป็นวงกลม */
+}
+
+main{
+    display: grid; /* ทำเป็นตาราง */
+    grid-template-columns: 1fr 1fr 1fr; /* จัดรูปแบบ */
+    background-color: aqua;
+}
+
+main div{
+    padding: 20px;
+}
+
+main div p{
+    margin-top: 10px; /* เว้นลงมา */
+}
+
+main img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

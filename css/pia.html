@@ -1,0 +1,27 @@
+<head>
+    <script>
+        var age;
+        document.write(""); //สั่งให้พิมพ์
+        age = window.prompt("Pl'z Enter your age");
+        if (isNaN(age) || age == 0 || age == null) {  //isNaN(ตัวแปร) คือ ตรวจว่าเป็นตัวเลขมั้ย
+            document.writeln("<font color = 'red'>Invalid age!!</font>");
+            exit;
+        }
+        document.writeln("<h1>You age is "+age+".");
+        if (age<=10)
+            document.writeln("Young.");
+        else if (age <= 20)
+            document.writeln("Teen.");
+        else if (age <= 10)
+            document.writeln("adult.");
+        else
+            document.writeln("old.");
+        document.writeln("</h1>");
+    </script>
+</head>
+
+<body>
+    <p>
+        click to Run
+    </p>
+</body>
